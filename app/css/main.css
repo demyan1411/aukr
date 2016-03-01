@@ -6,12 +6,21 @@
 /* colors */
 /* --------- fonts --------- */
 /* fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,300italic&subset=cyrillic-ext,cyrillic,latin-ext,latin);
 /* fonts end */
 /* --------- sections --------- */
 /* стили по умолчанию */
 a {
   text-decoration: none;
   color: inherit; }
+
+button {
+  outline: none;
+  border: none;
+  background: none; }
+
+img {
+  display: block; }
 
 ul {
   list-style: none;
@@ -35,7 +44,11 @@ html {
 
 body {
   height: 100%;
-  position: relative; }
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #263343; }
 
 /* чтобы прибить футер к низу */
 .main {
@@ -49,10 +62,87 @@ body {
 
 /* defaul style end  */
 .wrapper {
-  max-width: 960px;
+  width: 100%;
+  max-width: 988px;
   margin: 0 auto; }
+
+.button {
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #ffa200;
+  padding: 13px 20px;
+  border-radius: 40px;
+  display: block; }
+
+.header {
+  padding: 18px 0 20px; }
+  .header:before, .header:after {
+    content: " ";
+    display: table; }
+  .header:after {
+    clear: both; }
+  .header__left {
+    float: left;
+    margin-top: 7px; }
+  .header__right {
+    float: right; }
+  .header__mail {
+    font-size: 14px;
+    line-height: 17px;
+    color: #2e3644;
+    text-decoration: underline;
+    margin-top: 12px;
+    display: block; }
+    .header__mail:hover {
+      text-decoration: none; }
+    .header__mail::before {
+      content: '';
+      background: url(../img/mail.png) 0 0 no-repeat;
+      width: 17px;
+      height: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px; }
+
+.logo {
+  display: inline-block;
+  vertical-align: top; }
+  .logo__img {
+    width: 241px;
+    height: 46px; }
+
+.callback {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 190px;
+  margin-top: 9px; }
+  .callback__number {
+    font-size: 24px;
+    line-height: 27px;
+    color: #2e3644;
+    font-weight: 600;
+    margin-bottom: 12px; }
+    .callback__number::before {
+      content: '';
+      width: 31px;
+      height: 31px;
+      background: url(../img/phone.png) 0 0 no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 12px; }
+  .callback__link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #ffa200;
+    padding-left: 44px;
+    text-decoration: underline; }
+    .callback__link:hover {
+      text-decoration: none; }
 
 .footer {
   width: 100%;
-  height: 50px;
+  height: 100px;
   background: blue; }

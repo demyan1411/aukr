@@ -1,0 +1,80 @@
+.header {
+  @include cl;
+  padding: 18px 0 20px;
+
+  &__left {
+    float: left;
+    margin-top: 7px;
+  }
+  &__right {
+    float: right;
+  }
+  &__mail {
+    font-size: 14px;
+    line-height: 17px;
+    color: #2e3644;
+    text-decoration: underline;
+    margin-top: 12px;
+    display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &::before {
+      content: '';
+      background: url(../img/mail.png) 0 0 no-repeat;
+      width: 17px;
+      height: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+  }
+}
+
+.logo {
+  @include ib;
+
+  &__img {
+    width: 241px;
+    height: 46px;
+  }
+}
+
+.callback {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 190px;
+  margin-top: 9px;
+
+  &__number {
+    font-size: 24px;
+    line-height: 27px;
+    color: #2e3644;
+    font-weight: 600;
+    margin-bottom: 12px;
+
+    &::before {
+      content: '';
+      width: 31px;
+      height: 31px;
+      background: url(../img/phone.png) 0 0 no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    color: #ffa200;
+    padding-left: 44px;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

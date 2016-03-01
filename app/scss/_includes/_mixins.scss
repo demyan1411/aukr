@@ -1,11 +1,11 @@
 ﻿/* --------- mixins --------- */
 
-@mixin inlineblock {
+@mixin ib {
 	display: inline-block;
 	vertical-align: top;
 }
 
-@mixin clearfix {
+@mixin cl {
 	&:before, &:after {content: " "; display: table;}
 	&:after {clear: both;}
 }
