@@ -1,0 +1,30 @@
+.nav {
+  background: #2e3644;
+  padding: 22px 0;
+  color: #fee1bb;
+  text-align: center;
+
+  &__list {
+
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 24px;
+    border-right: 1px solid #968c80;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+  &__link {
+    &:hover,
+    &.active {
+      color: #ffa201;
+    }
+  }
+}

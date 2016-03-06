@@ -1,1 +1,15 @@
-nav asdasd
+block link
+-var menu = { 'Главная': 'index.html', 'Об ассоциации': 'works.html', 'Поддержка производителей овощей': 'contacts.html', 'Информация для участников': 'qwe.html', 'Пресс-центр': 'asd.html', 'Контакты': 'contacts.html' }
+nav.nav
+  .wrapper
+    ul.nav__list
+      each val, key in menu
+        if selected === key
+          li.nav__item
+            a.nav__link.active(href=val)= key
+        else
+          li.nav__item
+            a.nav__link(href=val)= key
+          
+    
+  
