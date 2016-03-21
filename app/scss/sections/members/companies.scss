@@ -1,0 +1,43 @@
+.companies {
+  &__search {
+    @include cl;
+    font-size: 0;
+    margin-bottom: 40px;
+  }
+  &__link {
+    font-size: 13px;
+    color: #2e3644;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 7px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+    &.active {
+      color: #fea002;
+      text-decoration: none;
+    }
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .companies {
+    &__link {
+      font-size: 18px;
+      margin-bottom: 20px;
+
+      &:first-child {
+        margin-top: 20px;
+        display: block;
+      }
+    }
+  }
+}

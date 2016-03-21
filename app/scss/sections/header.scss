@@ -78,3 +78,27 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .callback {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .header {
+    text-align: center;
+
+    &__left {
+      float: none;
+    }
+    &__right {
+      float: none;
+    }
+  }
+  .callback {
+    margin-left: 0;
+    margin-top: 26px;
+    margin-bottom: 25px;
+  }
+
+}

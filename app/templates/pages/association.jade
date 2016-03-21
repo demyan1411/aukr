@@ -1,0 +1,29 @@
+block link
+  -var selected = 'Об ассоциации';﻿
+
+block rightMenu
+  -var selected = 'Вступить в ассоциацию';
+
+extends ../layouts/two-column.jade
+
+block title
+  title Ассоциация
+  
+block css
+  // build:css css/association.min.css
+  link(rel='stylesheet', href='css/association.css')
+  //endbuild
+  
+
+block aside-nav
+  include ../common/association-nav.jade
+
+block subscribe
+  include ../common/subscribe.jade
+
+block right-content
+  .section--right
+    include ../common/association/title.jade
+    include ../common/association/form.jade
+    include ../common/association/advantages-white.jade
+  

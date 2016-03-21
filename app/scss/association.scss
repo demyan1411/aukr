@@ -1,0 +1,31 @@
+/* --------- mixins --------- */
+
+@import "_includes/mixins";
+
+/* --------- variables --------- */
+
+@import "_includes/variables";
+
+/* --------- fonts --------- */
+
+@import "_includes/fonts";
+
+/* --------- main --------- */
+
+@import "sections/default.scss";
+@import "sections/layout.scss";
+@import "sections/sections.scss";
+@import "sections/button.scss";
+@import "sections/header.scss";
+@import "sections/nav.scss";
+@import "sections/footer.scss";
+@import "sections/slider.scss";
+@import "sections/advantages.scss";
+
+/* --------- section --------- */
+
+@import "sections/subscribe.scss";
+@import "sections/aside-nav.scss";
+
+@import "sections/association/form.scss";
+@import "sections/association/advantages-white.scss";

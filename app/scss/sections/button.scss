@@ -6,5 +6,67 @@
   background: #ffa200;
   padding: 13px 20px;
   border-radius: 40px;
+  display: inline-block;
+
+  &:hover {
+    background: #ffb93f;
+  }
+  &:active {
+    background: #d58700;
+  }
+}
+
+.arrow-button {
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffa200;
+  display: inline-block;
+
+  &:after,
+  &:before {
+    content: '';
+    width: 41px;
+    height: 9px;
+    vertical-align: middle;
+    display: none;
+  }
+  &:after {
+    background: url(../img/association-link.png) 0 0 no-repeat;
+    display: inline-block;
+    margin-left: 7px;
+  }
+  &--left {
+    &:after {
+      display: none;
+    }
+    &:before {
+      background: url(../img/association-link--left.png) 0 0 no-repeat;
+      display: inline-block;
+      margin-right: 7px;
+    }
+
+  }
+}
+
+.button-news {
+  font-size: 13px;
+  line-height: 17px;
+  border: 2px solid #ffa200;
+  padding: 12px 10px 12px 20px;
+  border-radius: 50px;
+  margin: 0 auto;
   display: block;
+  width: 145px;
+  vertical-align: middle;
+
+  &:after {
+    content: '';
+    background: url(../img/tick.png) 0 0 no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-top: -2px;
+  }
 }

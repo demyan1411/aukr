@@ -1,0 +1,32 @@
+form.form(action="")
+  .form__title.js-contacts-form Форма обратной связи
+  .form__block.js-contacts-block
+    .form__field
+      .form__desc ФИО
+      input.form__input(type="text")
+      
+    .form__field
+      .form__desc Телефон
+      input.form__input(type="text")
+      
+    .form__field
+      .form__desc E-mail
+      input.form__input(type="text")
+      
+    .form__field
+      .form__desc Должность
+      input.form__input(type="text")
+      
+    .form__field
+      .form__desc Тема сообщения
+      input.form__input(type="text")
+      
+    .form__field
+      .form__desc Текст сообщения
+      textarea.form__textarea(type="text")
+    
+    label.form__file(for="file-input")
+      input.form__file-input#file-input(type= 'file')
+      #file-name.form__file-faked Прикрепить файл
+
+    button.button(type="submit") Отправить сообщение

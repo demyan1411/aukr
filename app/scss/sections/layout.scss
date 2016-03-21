@@ -1,5 +1,66 @@
+.content {
+	padding-top: 57px;
+	width: 100%;
+}
+
 .wrapper {
+	@include cl;
 	width: 100%;
 	max-width: 988px;
 	margin: 0 auto;
+	position: relative;
+
+	&__column {
+		float: left;
+
+		&--right {
+			float: right;
+		}
+	}
+}
+.aside {
+	width: 100%;
+	max-width: 320px;
+}
+
+.first-block {
+	background: #efefef;
+}
+
+@media screen and (max-width: 1000px) {
+	.wrapper {
+		max-width: 768px;
+		padding: 0 10px;
+		&__column {
+			float: none;
+
+			&--right {
+				float: none;
+				padding: 70px;
+				padding-top: 20px;
+				padding-bottom: 0;
+			}
+		}
+	}
+	.aside {
+		max-width: 100%;
+		padding-left: 70px;
+	}
+}
+@media screen and (max-width: 740px) {
+	.wrapper {
+		padding: 0;
+		margin: 0 auto;
+		&__column {
+			padding: 0 20px;
+			&--right {
+				padding: 0 20px;
+			}
+		}
+	}
+	.aside {
+		max-width: 280px;
+		margin: 0 auto;
+		padding-left: 0;
+	}
 }

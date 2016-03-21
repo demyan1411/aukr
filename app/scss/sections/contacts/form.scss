@@ -1,0 +1,115 @@
+.form {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  width: 320px;
+  z-index: 1;
+  text-align: center;
+
+  &__title {
+    color: #2e3644;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 18px 0 21px 27px;
+    cursor: pointer;
+    text-align: left;
+    background: #efefef;
+
+    &:after {
+      content: '';
+      border: 5px solid transparent;
+      border-left: 5px solid #2e3643;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 11px;
+    }
+
+    &.js-active {
+      &:after {
+        border: 5px solid transparent;
+        border-top: 5px solid #2e3643;
+        margin-top: 5px;
+      }
+    }
+  }
+  &__block {
+    padding: 4px 27px 25px 27px;
+    background: #efefef;
+    display: none;
+  }
+  &__field {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  &__desc {
+    font-size: 13px;
+    color: #2e3644;
+    line-height: 17px;
+    margin-bottom: 4px;
+  }
+  &__input,
+  &__textarea {
+    display: block;
+    width: 100%;
+    background: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    color: #3b3b3b;
+    padding: 10px;
+  }
+
+  &__textarea {
+    resize: none;
+    height: 150px;
+  }
+
+  &__file {
+    &-input {
+      display: none;
+      overflow: hidden;
+    }
+    &-faked {
+      font-size: 13px;
+      line-height: 17px;
+      color: #ffa201;
+
+      overflow: hidden;
+      outline: 0;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: underline;
+      @include hover-underline;
+
+      &:after {
+        content: '';
+        background: url(../img/file.png) 0 0 no-repeat;
+        display: inline-block;
+        vertical-align: middle;
+        width: 11px;
+        height: 15px;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .form {
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+
+    &__block {
+      display: block;
+    }
+    &__title:after {
+      border: 5px solid transparent;
+      border-top: 5px solid #2e3643;
+      margin-top: 5px;
+    }
+  }
+}

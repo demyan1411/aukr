@@ -1,0 +1,31 @@
+block link
+	-var selected = 'Об ассоциации';﻿
+	
+block rightMenu
+	-var selected = 'Миссия';
+
+extends ../layouts/two-column.jade
+  
+block title
+	title Миссия
+
+block css
+	// build:css css/mission.min.css
+	link(rel='stylesheet', href='css/mission.css')
+	//endbuild
+
+block aside-nav
+	include ../common/association-nav.jade
+
+block subscribe
+	include ../common/subscribe.jade
+
+block right-content
+	.section--right.mission
+		include ../common/mission/title.jade
+		include ../common/mission/columns.jade
+		include ../common/mission/table.jade
+		include ../common/mission/list-ul.jade
+		include ../common/mission/list-ol.jade
+		include ../common/mission/documents.jade
+		include ../common/mission/gallery.jade

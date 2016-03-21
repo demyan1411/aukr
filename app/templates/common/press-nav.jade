@@ -1,0 +1,8 @@
+block rightMenu
+
+-var rightMenu = {'Новости': 'news.html', 'Статьи': '', 'Аналитические обзоры': ''}
+
+ul.aside-menu
+  each linkHref, linkName in rightMenu
+    li.aside-menu__item
+      a.aside-menu__link(href=linkHref, class={active: selected === linkName})= linkName

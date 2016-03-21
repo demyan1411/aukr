@@ -4,8 +4,11 @@
   color: #fee1bb;
   text-align: center;
 
-  &__list {
-
+  &__title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    display: none;
   }
   &__item {
     display: inline-block;
@@ -25,6 +28,50 @@
     &:hover,
     &.active {
       color: #ffa201;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav {
+    font-size: 11px;
+    &__item {
+      padding: 0 10px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .nav {
+    text-align: left;
+    .wrapper {
+      width: 280px;
+    }
+    &__title {
+      display: block;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 22px;
+        background: url(../img/nav.png) 0 0 no-repeat;
+        margin-right: 15px;
+      }
+      &.js-active:before {
+        background: url(../img/close-nav.png) 0 0 no-repeat;
+      }
+    }
+    &__list {
+      display: none;
+      margin-top: 20px;
+    }
+    &__item {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      line-height: 48px;
+      border: none;
+      padding-left: 0;
     }
   }
 }

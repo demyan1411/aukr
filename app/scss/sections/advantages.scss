@@ -1,0 +1,123 @@
+.advantages {
+  @include cl;
+  width: 50%;
+  float: left;
+  background: #2e3644;
+  padding: 40px 20px 40px 50px;
+  text-align: center;
+  margin-bottom: 70px;
+  position: relative;
+
+  &__block {
+    @include cl;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__column {
+    float: left;
+    max-width: 180px;
+    margin-right: 55px;
+    color: #fff;
+    text-align: left;
+
+    &:last-child {
+      margin-right: 0;
+      max-width: 172px;
+    }
+  }
+  .button {
+    display: inline-block;
+  }
+  .potato {
+    position: absolute;
+    left: -116px;
+    bottom: -51px;
+  }
+}
+
+.info-list {
+  &__item {
+    margin-bottom: 40px;
+  }
+  &__img {
+    margin-bottom: 8px;
+  }
+  &__title {
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  &__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .advantages {
+    padding: 35px 20px;
+    &__column,
+    &__column:last-child {
+      max-width: 155px;
+    }
+    &__column {
+      margin-right: 20px;
+    }
+  }
+  .info-list {
+    &__title,
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .advantages {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+
+    &__title {
+      text-align: left;
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 320px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+    &__block {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    &__column,
+    &__column:last-child {
+      max-width: 100%;
+      margin-right: 0;
+    }
+    .potato {
+      display: none;
+    }
+  }
+  .info-list {
+    &__img-block {
+      display: inline-block;
+      vertical-align: top;
+      width: 45px;
+    }
+    &__block {
+      width: 220px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

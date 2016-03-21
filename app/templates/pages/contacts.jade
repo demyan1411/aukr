@@ -1,0 +1,33 @@
+block link
+  -var selected = 'Контакты';﻿
+
+extends ../layouts/main-layout.jade
+
+block title
+  title Контакты
+
+block css
+  // build:css css/contacts.min.css
+  link(rel='stylesheet', href='css/contacts.css')
+  //endbuild
+
+block content
+  section.contacts
+    .wrapper
+      .adress
+        .adress__title Адрес
+        .adress__text
+          | г. Новосибирск,
+          br
+          | ул. Новосибирская д. 5,
+          br
+          | кор. 2
+          
+        .adress__phone +7 123 456-78-90
+        a.adress__email(href="mailto:info@mail.ru") info@mail.ru
+  
+      #map
+      include ../common/contacts/form.jade
+      
+  .bottom-subscribe
+    include ../common/subscribe.jade

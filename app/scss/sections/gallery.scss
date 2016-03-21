@@ -1,0 +1,117 @@
+.gallery {
+  @include cl;
+  margin-bottom: 20px;
+
+  &__title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &-for {
+    width: 484px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+
+    .slick-next, .slick-prev {
+      width: 28px;
+      height: 315px;
+      background: #000;
+      opacity: .5;
+      top: 0;
+      transform: translate(0);
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+    .slick-next:before,
+    .slick-prev:before {
+      width: 9px;
+      height: 15px;
+    }
+    .slick-next:before {
+      background: url(../img/gallery-for-next.png) 0 0 no-repeat;
+      margin-left: 11px;
+    }
+    .slick-prev:before {
+      margin-left: 9px;
+      background: url(../img/gallery-for-prev.png) 0 0 no-repeat;
+    }
+    &__img {
+
+    }
+    &__text {
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic;
+      margin: 10px 10px 0 30px;
+    }
+  }
+
+  &-nav {
+    width: 64px;
+    margin-top: -30px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &__slide {
+      height: 64px !important;
+      background: #2e3644;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    .slick-next, .slick-prev {
+      width: 27px;
+      height: 27px;
+      top: auto;
+    }
+    .slick-next {
+      bottom: -40px;
+    }
+    .slick-prev {
+      top: -20px;
+    }
+    .slick-next:before {
+      background: url(../img/gallery-next.png) 0 0 no-repeat;
+    }
+    .slick-prev:before {
+      background: url(../img/gallery-prev.png) 0 0 no-repeat;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .gallery {
+    &-nav {
+      display: none;
+    }
+    &-for {
+      width: 100%;
+
+      &__img {
+        width: 100%;
+      }
+      .slick-next, .slick-prev {
+        height: 396px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .gallery {
+    &-for {
+      width: 280px;
+
+      .slick-next, .slick-prev {
+        height: 182px;
+      }
+    }
+  }
+}

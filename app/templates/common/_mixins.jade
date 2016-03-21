@@ -1,0 +1,26 @@
+mixin list-item(imgSrc, title, texts)
+  li.info-list__item
+    .info-list__img-block
+      img.info-list__img(src=imgSrc, alt="")
+      
+    .info-list__block
+      .info-list__title= title
+      each text in texts
+        .info-list__text= text
+
+mixin partner(imgSrc, name, site, email)
+  li.partner
+    .partner__top
+      img.partner__img(src=imgSrc, alt="")
+      
+    .partner__block
+      .partner__left Название:
+      .partner__right= name
+
+    .partner__block
+      .partner__left сайт:
+      a.partner__right.partner__right--link(href=site)= site
+    
+    .partner__block
+      .partner__left e-mail:
+      .partner__right= email

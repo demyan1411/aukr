@@ -1,8 +1,23 @@
 block link
 	-var selected = 'Главная';﻿
-
-extends ../layouts/main_layout.jade
+	
+block title
+	title index
+	
+block css
+	// build:css css/index.min.css
+	link(rel='stylesheet', href='css/index.css')
+	//endbuild
+	
+extends ../layouts/main-layout.jade
 
 block content
-	.wrapper.
-		hello world
+	include ../common/index/first-block.jade
+	section.section.association-advantages
+		.wrapper
+			include ../common/index/association.jade
+			include ../common/advantages.jade
+
+	include ../common/index/articles.jade
+	include ../common/index/partners.jade
+	include ../common/subscribe.jade

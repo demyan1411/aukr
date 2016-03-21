@@ -1,0 +1,27 @@
+block link
+	-var selected = 'Об ассоциации';﻿
+	
+block rightMenu
+	-var selected = 'Члены ассоциации';
+
+extends ../layouts/two-column.jade
+
+block title
+	title Члены ассоциации
+
+block css
+	// build:css css/members.min.css
+	link(rel='stylesheet', href='css/members.css')
+	//endbuild
+
+block aside-nav
+	include ../common/association-nav.jade
+
+block subscribe
+	include ../common/subscribe.jade
+
+block right-content
+	.section--right.members
+		include ../common/members/companies.jade
+		include ../common/members/partners.jade
+		include ../common/pages-list.jade

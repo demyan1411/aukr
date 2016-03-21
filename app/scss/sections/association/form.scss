@@ -1,0 +1,75 @@
+.association-form {
+  margin-bottom: 25px;
+
+  &__block {
+    background: #efefef;
+    padding: 18px 20px;
+    font-size: 0;
+  }
+  &__field {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+
+    &--indeks {
+      width: 125px;
+      margin-right: 20px;
+    }
+    &--adress {
+      width: 380px;
+      float: right;
+    }
+    &--email {
+      width: 210px;
+      margin-right: 20px;
+    }
+    &--phone {
+      width: 150px;
+      margin-right: 20px;
+    }
+    &--site {
+      width: 125px;
+      float: right;
+    }
+  }
+  &__desk {
+    font-size: 13px;
+    color: #001616;
+    margin-bottom: 6px;
+  }
+  &__input {
+    background: #fff;
+    padding: 8px 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-size: 13px;
+    color: #001616;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  .button {
+    color: #001616;
+    width: 160px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .association-form {
+    &__field {
+      &--adress,
+      &--site {
+        float: none;
+        width: 100%;
+      }
+      &--email,
+      &--phone {
+        width: 100%;
+      }
+    }
+  }
+}

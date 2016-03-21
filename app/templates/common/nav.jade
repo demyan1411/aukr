@@ -1,15 +1,11 @@
 block link
--var menu = { 'Главная': 'index.html', 'Об ассоциации': 'works.html', 'Поддержка производителей овощей': 'contacts.html', 'Информация для участников': 'qwe.html', 'Пресс-центр': 'asd.html', 'Контакты': 'contacts.html' }
+
+-var menu = { 'Главная': 'index.html', 'Об ассоциации': 'mission.html', 'Поддержка производителей овощей': 'contacts.html', 'Информация для участников': 'qwe.html', 'Пресс-центр': 'news.html', 'Контакты': 'contacts.html' }
+
 nav.nav
   .wrapper
-    ul.nav__list
+    .nav__title.js-nav Меню
+    ul.nav__list.js-nav-list
       each val, key in menu
-        if selected === key
-          li.nav__item
-            a.nav__link.active(href=val)= key
-        else
-          li.nav__item
-            a.nav__link(href=val)= key
-          
-    
-  
+        li.nav__item
+          a.nav__link(href=val, class={active: selected === key})= key

@@ -33,7 +33,7 @@ gulp.task('jade', function () {
 
 // Компилируем scss в css
 gulp.task('scss', function () {
-	gulp.src('app/scss/main.scss')
+	gulp.src('app/scss/*.scss')
 	.pipe(sass())
 	.on('error', log)
 	.pipe(gulp.dest('app/css'))

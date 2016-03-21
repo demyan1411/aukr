@@ -1,0 +1,34 @@
+block link
+  -var selected = 'Пресс-центр';﻿
+
+block rightMenu
+  -var selected = 'Новости';
+
+extends ../layouts/two-column.jade
+
+block title
+  title Новость
+
+block css
+  // build:css css/news-one.min.css
+  link(rel='stylesheet', href='css/news-one.css')
+  //endbuild
+
+block aside-nav
+  include ../common/press-nav.jade
+
+block subscribe
+  include ../common/subscribe.jade
+  
+block aside-news
+  include ../common/news-one/another-news.jade
+
+block right-content
+  .section--right
+    include ../common/news-one/title.jade
+    include ../common/news-one/documents.jade
+    include ../common/news-one/title2.jade
+    include ../common/news-one/gallery.jade
+    include ../common/news-one/title3.jade
+    include ../common/news-one/video.jade
+    include ../common/news-one/title4.jade

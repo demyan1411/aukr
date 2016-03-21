@@ -1,0 +1,8 @@
+block rightMenu
+
+-var rightMenu = {'Миссия': 'mission.html', 'Цели': '', 'Устав': '', 'Информация о деятельности': '', 'Преимущества для членов': '', 'Вступить в ассоциацию': 'association.html', 'Члены ассоциации': 'members.html'}
+
+ul.aside-menu
+  each linkHref, linkName in rightMenu
+    li.aside-menu__item
+      a.aside-menu__link(href=linkHref, class={active: selected === linkName})= linkName
