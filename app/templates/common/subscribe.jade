@@ -1,5 +1,5 @@
 .subscribe
   .subscribe__title Подписаться на публикации
-  form(action="")
-    input.subscribe__input(type="text", placeholder="Ваш e-mail")
+  form.js-subscribe-form(action="")
+    input.subscribe__input(type="text", placeholder="Ваш e-mail", data-valid="email")
     button.subscribe__button(type="submit") ok

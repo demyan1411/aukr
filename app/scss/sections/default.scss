@@ -72,4 +72,13 @@ body {
 	}
 }
 
+form{
+	input {
+		border: 2px solid transparent;
+	}
+	.js-error {
+		border: 2px solid #c84855;
+	}
+}
+
 /* defaul style end  */

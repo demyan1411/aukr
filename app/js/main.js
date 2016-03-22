@@ -1,10 +1,17 @@
 $(document).ready(function() {
 
 	"use strict";
-
-	$('form').on('submit', function(e) {
-		e.preventDefault();
-	});
+	if($('form').length) {
+		new FormSubmit({
+		  element: $('.js-assotiation-form')
+		});
+		new FormSubmit({
+		  element: $('.js-subscribe-form')
+		});
+		new FormSubmit({
+		  element: $('.js-contacts-form')
+		});
+	}
 
 	$('.main-slider').slick({
 		autoplay: false,
@@ -54,19 +61,20 @@ $(document).ready(function() {
   	$('.contacts #map').css("pointer-events", "auto");
   });
 
-	$('.js-contacts-form').on('click', function() {
+	$('.js-contacts-form-title').on('click', function() {
 		if($(window).width() > 740) {
 			$('.js-contacts-block').slideToggle();
-			$('.js-contacts-form').toggleClass('js-active')
+			$('.js-contacts-form-title').toggleClass('js-active')
 		}
 	})
 
 	$('.gallery-nav').slick({
 		autoplay: false,
-		slidesToShow: 4,
+		slidesToShow: 3,
   	slidesToScroll: 1,
 		vertical: true,
 		asNavFor: '.gallery-for',
+		centerMode: true,
 		focusOnSelect: true
 	});
 

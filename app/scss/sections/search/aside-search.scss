@@ -1,0 +1,50 @@
+.aside-search {
+  &__title {
+    font-size: 22px;
+    line-height: 25px;
+    color: #2e3643;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  &__form {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+  }
+  &__input {
+    font-size: 15px;
+    line-height: 15px;
+    color: #000;
+    padding-bottom: 9px;
+    width: 90%;
+  }
+  &__button {
+    float: right;
+    width: 19px;
+    height: 19px;
+    background: url(../img/aside-search.png) 0 0 no-repeat;
+  }
+  &__subtitle {
+    font-size: 13px;
+    line-height: 22px;
+    color: #b1b1b1;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aside-search {
+    &__form {
+      width: 310px;
+    }
+  }
+}
+@media screen and (max-width: 740px) {
+  .aside-search {
+    &__form {
+      width: 280px;
+    }
+    &__subtitle {
+      margin-bottom: 24px;
+    }
+  }
+}

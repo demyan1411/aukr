@@ -1,17 +1,17 @@
-form.form(action="")
-  .form__title.js-contacts-form Форма обратной связи
+form.form.js-contacts-form(action="")
+  .form__title.js-contacts-form-title Форма обратной связи
   .form__block.js-contacts-block
     .form__field
       .form__desc ФИО
-      input.form__input(type="text")
+      input.form__input(type="text", data-valid="text")
       
     .form__field
       .form__desc Телефон
-      input.form__input(type="text")
+      input.form__input(type="text", data-valid="phone")
       
     .form__field
       .form__desc E-mail
-      input.form__input(type="text")
+      input.form__input(type="text", data-valid="email")
       
     .form__field
       .form__desc Должность

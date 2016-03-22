@@ -70,6 +70,12 @@ body {
     display: table-row;
     height: 100%; }
 
+form input {
+  border: 2px solid transparent; }
+
+form .js-error {
+  border: 2px solid #c84855; }
+
 /* defaul style end  */
 .content {
   padding-top: 57px;
@@ -146,6 +152,9 @@ body {
   color: #000;
   line-height: 22px;
   margin-bottom: 12px; }
+  .section-title__title--link:hover {
+    color: #ffa200;
+    text-decoration: underline; }
 
 .section-title__text {
   font-size: 13px;
@@ -196,6 +205,9 @@ body {
     color: #000;
     line-height: 22px;
     margin-bottom: 12px; }
+    .section-columns__title--link:hover {
+      color: #ffa200;
+      text-decoration: underline; }
   .section-columns__text {
     font-size: 13px;
     line-height: 20px;
@@ -248,6 +260,9 @@ body {
     color: #000;
     line-height: 22px;
     margin-bottom: 12px; }
+    .section-table__title--link:hover {
+      color: #ffa200;
+      text-decoration: underline; }
   .section-table__text {
     font-size: 13px;
     line-height: 20px;
@@ -283,6 +298,9 @@ body {
     color: #000;
     line-height: 22px;
     margin-bottom: 12px; }
+    .section-list__title--link:hover {
+      color: #ffa200;
+      text-decoration: underline; }
   .section-list__text {
     font-size: 13px;
     line-height: 20px;
@@ -311,6 +329,9 @@ body {
     color: #000;
     line-height: 22px;
     margin-bottom: 12px; }
+    .section-documents__title--link:hover {
+      color: #ffa200;
+      text-decoration: underline; }
   .section-documents__text {
     font-size: 13px;
     line-height: 20px;
@@ -959,7 +980,8 @@ body {
     font-size: 13px;
     color: #001616;
     font-style: italic;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    border: 2px solid transparent; }
   .association-form .button {
     color: #001616;
     width: 160px;

@@ -1,0 +1,20 @@
+extends ../layouts/two-column.jade
+
+block title
+  title Новости
+
+block css
+  // build:css css/news.min.css
+  link(rel='stylesheet', href='css/search.css')
+  //endbuild
+
+block search
+  include ../common/search/aside-search.jade
+
+block subscribe
+  include ../common/subscribe.jade
+
+block right-content
+  .section--right
+    include ../common/search/search.jade
+    include ../common/pages-list.jade

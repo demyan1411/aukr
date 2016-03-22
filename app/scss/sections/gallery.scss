@@ -62,11 +62,19 @@
     display: inline-block;
     vertical-align: middle;
 
+    .slick-current {
+      border: 3px solid #ffa200;
+      width: 100%;
+      height: 100%;
+    }
+
     &__slide {
       height: 64px !important;
       background: #2e3644;
       margin-bottom: 5px;
       color: #fff;
+      border: 3px solid transparent;
+      width: 64px !important;
     }
     .slick-next, .slick-prev {
       width: 27px;
@@ -74,7 +82,7 @@
       top: auto;
     }
     .slick-next {
-      bottom: -40px;
+      bottom: -46px;
     }
     .slick-prev {
       top: -20px;

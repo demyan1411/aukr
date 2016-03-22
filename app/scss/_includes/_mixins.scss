@@ -66,6 +66,13 @@
     color: #000;
     line-height: 22px;
     margin-bottom: 12px;
+
+		&--link {
+			&:hover {
+				color: #ffa200;
+				text-decoration: underline;
+			}
+		}
   }
 	&__text {
     font-size: 13px;

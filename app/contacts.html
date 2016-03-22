@@ -63,20 +63,20 @@
               <div class="adress__phone">+7 123 456-78-90</div><a href="mailto:info@mail.ru" class="adress__email">info@mail.ru</a>
             </div>
             <div id="map"></div>
-            <form action="" class="form">
-              <div class="form__title js-contacts-form">Форма обратной связи</div>
+            <form action="" class="form js-contacts-form">
+              <div class="form__title js-contacts-form-title">Форма обратной связи</div>
               <div class="form__block js-contacts-block">
                 <div class="form__field">
                   <div class="form__desc">ФИО</div>
-                  <input type="text" class="form__input">
+                  <input type="text" data-valid="text" class="form__input">
                 </div>
                 <div class="form__field">
                   <div class="form__desc">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" data-valid="phone" class="form__input">
                 </div>
                 <div class="form__field">
                   <div class="form__desc">E-mail</div>
-                  <input type="text" class="form__input">
+                  <input type="text" data-valid="email" class="form__input">
                 </div>
                 <div class="form__field">
                   <div class="form__desc">Должность</div>
@@ -102,8 +102,8 @@
         <div class="bottom-subscribe">
           <div class="subscribe">
             <div class="subscribe__title">Подписаться на публикации</div>
-            <form action="">
-              <input type="text" placeholder="Ваш e-mail" class="subscribe__input">
+            <form action="" class="js-subscribe-form">
+              <input type="text" placeholder="Ваш e-mail" data-valid="email" class="subscribe__input">
               <button type="submit" class="subscribe__button">ok</button>
             </form>
           </div>
@@ -167,14 +167,14 @@
     </div>
     <!-- build:js js/vendor.min.js-->
     <!-- bower:js-->
-    <script src="/bower/jquery/dist/jquery.js"></script>
-    <script src="/bower/slick-carousel/slick/slick.min.js"></script>
+    <script src="/bower/jquery/dist/jquery.js" defer></script>
+    <script src="/bower/slick-carousel/slick/slick.min.js" defer></script>
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js js/main.min.js-->
-    <script src="js/app.js"></script>
-    <script src="js/modules.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/submit-form.js" defer></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/main.js" defer></script>
     <!-- endbuild-->
   </body>
 </html>

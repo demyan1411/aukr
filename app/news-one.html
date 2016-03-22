@@ -68,8 +68,8 @@
                 </nav>
                 <div class="subscribe">
                   <div class="subscribe__title">Подписаться на публикации</div>
-                  <form action="">
-                    <input type="text" placeholder="Ваш e-mail" class="subscribe__input">
+                  <form action="" class="js-subscribe-form">
+                    <input type="text" placeholder="Ваш e-mail" data-valid="email" class="subscribe__input">
                     <button type="submit" class="subscribe__button">ok</button>
                   </form>
                 </div>
@@ -77,38 +77,31 @@
                   <div class="another-news__title">Другие новости</div>
                   <ul class="another-news__list">
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                     <li class="another-news__item">
-                      <div class="another-news__date">15 декабря 2015</div>
-                      <div class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</div>
+                      <div class="another-news__date">15 декабря 2015</div><a href="" class="another-news__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это</a>
                       <div class="another-news__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.<span class="another-news__bold">Lorem Ipsum используют</span></div>
                     </li>
                   </ul><a href="/news.html" class="another-news__link">Посмотреть все новости</a>
@@ -204,8 +197,8 @@
           <div class="bottom-subscribe">
             <div class="subscribe">
               <div class="subscribe__title">Подписаться на публикации</div>
-              <form action="">
-                <input type="text" placeholder="Ваш e-mail" class="subscribe__input">
+              <form action="" class="js-subscribe-form">
+                <input type="text" placeholder="Ваш e-mail" data-valid="email" class="subscribe__input">
                 <button type="submit" class="subscribe__button">ok</button>
               </form>
             </div>
@@ -270,14 +263,14 @@
     </div>
     <!-- build:js js/vendor.min.js-->
     <!-- bower:js-->
-    <script src="/bower/jquery/dist/jquery.js"></script>
-    <script src="/bower/slick-carousel/slick/slick.min.js"></script>
+    <script src="/bower/jquery/dist/jquery.js" defer></script>
+    <script src="/bower/slick-carousel/slick/slick.min.js" defer></script>
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js js/main.min.js-->
-    <script src="js/app.js"></script>
-    <script src="js/modules.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/submit-form.js" defer></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/main.js" defer></script>
     <!-- endbuild-->
   </body>
 </html>

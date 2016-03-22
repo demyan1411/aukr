@@ -31,6 +31,11 @@
   &__subtitle {
     font-size: 15px;
     line-height: 20px;
+
+    &:hover {
+      color: #ffa200;
+      text-decoration: underline;
+    }
   }
   &__text {
     font-size: 13px;

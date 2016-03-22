@@ -70,6 +70,12 @@ body {
     display: table-row;
     height: 100%; }
 
+form input {
+  border: 2px solid transparent; }
+
+form .js-error {
+  border: 2px solid #c84855; }
+
 /* defaul style end  */
 .content {
   padding-top: 57px;

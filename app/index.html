@@ -270,8 +270,8 @@
         </section>
         <div class="subscribe">
           <div class="subscribe__title">Подписаться на публикации</div>
-          <form action="">
-            <input type="text" placeholder="Ваш e-mail" class="subscribe__input">
+          <form action="" class="js-subscribe-form">
+            <input type="text" placeholder="Ваш e-mail" data-valid="email" class="subscribe__input">
             <button type="submit" class="subscribe__button">ok</button>
           </form>
         </div>
@@ -334,14 +334,14 @@
     </div>
     <!-- build:js js/vendor.min.js-->
     <!-- bower:js-->
-    <script src="/bower/jquery/dist/jquery.js"></script>
-    <script src="/bower/slick-carousel/slick/slick.min.js"></script>
+    <script src="/bower/jquery/dist/jquery.js" defer></script>
+    <script src="/bower/slick-carousel/slick/slick.min.js" defer></script>
     <!-- endbower-->
     <!-- endbuild-->
     <!-- build:js js/main.min.js-->
-    <script src="js/app.js"></script>
-    <script src="js/modules.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/submit-form.js" defer></script>
+    <script src="js/map.js" defer></script>
+    <script src="js/main.js" defer></script>
     <!-- endbuild-->
   </body>
 </html>

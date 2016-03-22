@@ -1,36 +1,36 @@
 section.association-form
-  form.association-form__block
+  form.association-form__block.js-assotiation-form(action="")
     .association-form__field
       .association-form__desk Наименование предприятия
-      input.association-form__input(type="text", placeholder="Введите название вашего предприятия")
+      input.association-form__input(type="text", placeholder="Введите название вашего предприятия", name="company", data-valid="text")
     
     .association-form__field.association-form__field--indeks
       .association-form__desk Индекс
-      input.association-form__input(type="text", placeholder="123456")
+      input.association-form__input(type="text", placeholder="123456", name="indeks", data-valid="text")
       
     .association-form__field.association-form__field--adress
       .association-form__desk Адрес
-      input.association-form__input(type="text", placeholder="Область, город")
+      input.association-form__input(type="text", placeholder="Область, город", name="adress", data-valid="text")
       
     .association-form__field
       .association-form__desk Вид деятельности
-      input.association-form__input(type="text", placeholder="")
+      input.association-form__input(type="text", placeholder="", name="activity", data-valid="text")
     
     .association-form__field
       .association-form__desk Контактное лицо
-      input.association-form__input(type="text", placeholder="Иванов Иван Иванович")
+      input.association-form__input(type="text", placeholder="Иванов Иван Иванович", name="name", data-valid="text")
 
     .association-form__field.association-form__field--email
       .association-form__desk E-mail
-      input.association-form__input(type="text", placeholder="ivanov.ivan@mail.ru")
+      input.association-form__input(type="text", placeholder="ivanov.ivan@mail.ru", name="email", data-valid="email")
       
     .association-form__field.association-form__field--phone
       .association-form__desk Телефон для связи
-      input.association-form__input(type="text", placeholder="+7 123 456-78-90")
+      input.association-form__input(type="text", placeholder="+7 123 456-78-90", name="phone", data-valid="phone")
       
     .association-form__field.association-form__field--site
       .association-form__desk Сайт
-      input.association-form__input(type="text", placeholder="")
+      input.association-form__input(type="text", placeholder="", name="site", data-valid="text")
   
     button.button(type="submit") отправить заявку
     
