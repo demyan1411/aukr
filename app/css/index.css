@@ -699,7 +699,9 @@ form .js-error {
     background: #fff;
     padding: 30px 20px 30px 30px; }
   .articles__header {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    width: 280px;
+    margin: 0 auto; }
     .articles__header:before, .articles__header:after {
       content: " ";
       display: table; }
@@ -806,7 +808,14 @@ form .js-error {
         display: none; }
   .articles__news .news {
     margin-right: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    float: none; }
+  .articles__news .news:nth-child(2) {
+    margin: 0 auto;
+    margin-bottom: 30px; }
   .articles__news .news:last-child {
     display: block; } }
 

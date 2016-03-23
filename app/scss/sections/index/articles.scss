@@ -10,6 +10,8 @@
   &__header{
     @include cl;
     margin-bottom: 50px;
+    width: 280px;
+    margin: 0 auto;
   }
   &__item {
     display: inline-block;
@@ -148,6 +150,14 @@
       .news {
         margin-right: 0;
         margin-bottom: 20px;
+        width: 280px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        float: none;
+      }
+      .news:nth-child(2) {
+        margin: 0 auto;
+        margin-bottom: 30px;
       }
       .news:last-child {
         display: block;
