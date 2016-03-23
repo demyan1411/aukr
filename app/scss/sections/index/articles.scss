@@ -10,8 +10,6 @@
   &__header{
     @include cl;
     margin-bottom: 50px;
-    width: 280px;
-    margin: 0 auto;
   }
   &__item {
     display: inline-block;
@@ -122,6 +120,8 @@
 @media screen and (max-width: 740px) {
   .articles {
     &__header {
+      width: 280px;
+      margin: 0 auto;
       margin-bottom: 0;
     }
     &__block {

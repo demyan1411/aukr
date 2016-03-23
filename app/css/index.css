@@ -699,9 +699,7 @@ form .js-error {
     background: #fff;
     padding: 30px 20px 30px 30px; }
   .articles__header {
-    margin-bottom: 50px;
-    width: 280px;
-    margin: 0 auto; }
+    margin-bottom: 50px; }
     .articles__header:before, .articles__header:after {
       content: " ";
       display: table; }
@@ -791,6 +789,8 @@ form .js-error {
 
 @media screen and (max-width: 740px) {
   .articles__header {
+    width: 280px;
+    margin: 0 auto;
     margin-bottom: 0; }
   .articles__block {
     border: none; }
