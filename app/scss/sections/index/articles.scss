@@ -55,8 +55,11 @@
   &__news {
     @include cl;
     margin-bottom: 25px;
-    display: none;
 
+  }
+  .js-article-list {
+    display: none;
+    
     &.js-active {
       display: block;
     }
