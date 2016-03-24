@@ -1,0 +1,29 @@
+/* --------- mixins --------- */
+
+@import "_includes/mixins";
+
+/* --------- variables --------- */
+
+@import "_includes/variables";
+
+/* --------- fonts --------- */
+
+@import "_includes/fonts";
+
+/* --------- main --------- */
+
+@import "sections/default.scss";
+@import "sections/layout.scss";
+@import "sections/sections.scss";
+@import "sections/button.scss";
+@import "sections/header.scss";
+@import "sections/nav.scss";
+@import "sections/footer.scss";
+
+/* --------- section --------- */
+
+@import "sections/subscribe.scss";
+@import "sections/aside-nav.scss";
+@import "sections/pages.scss";
+
+@import "sections/news-page/news.scss"

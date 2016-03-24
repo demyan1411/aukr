@@ -55,6 +55,9 @@
   &__news {
     @include cl;
     margin-bottom: 25px;
+
+  }
+  .js-article-list {
     display: none;
 
     &.js-active {
@@ -126,6 +129,7 @@
     }
     &__block {
       border: none;
+      padding-left: 20px;
     }
     &__item {
       display: block;

@@ -26,7 +26,7 @@
     height: 36px;
     border-radius: 50%;
     background: #fea002;
-    color: #001616;
+    color: #fff;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -49,6 +49,23 @@
   .subscribe {
     display: none;
   }
+  .bottom-subscribe {
+    .subscribe {
+      display: block;
+    }
+  }
+  .bottom-subscribe .subscribe {
+    display: block;
+    width: 100% !important;
+    margin-top: 10px !important;
+
+    &__input {
+      width: 90% !important;
+    }
+    &__button {
+      color: #000;
+    }
+  }
 }
 @media screen and (max-width: 740px) {
   .wrapper__column--right {
@@ -62,12 +79,9 @@
     }
   }
   .bottom-subscribe .subscribe {
-    display: block;
-    width: 100% !important;
-    margin-top: 10px !important;
-
     &__input {
       width: 80% !important;
     }
   }
+
 }

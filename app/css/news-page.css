@@ -883,48 +883,48 @@ form .js-error {
       .pages__page:first-child, .pages__page:last-child {
         margin: 0; } }
 
-.news__title {
+.news-page__title {
   font-size: 22px;
   line-height: 25px;
   font-weight: 700;
   margin-bottom: 15px; }
 
-.news__item {
+.news-page__item {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 17px;
   margin-bottom: 20px; }
-  .news__item:last-child {
+  .news-page__item:last-child {
     border-bottom: none; }
 
-.news__top {
+.news-page__top {
   margin-bottom: 12px; }
-  .news__top:before, .news__top:after {
+  .news-page__top:before, .news-page__top:after {
     content: " ";
     display: table; }
-  .news__top:after {
+  .news-page__top:after {
     clear: both; }
 
-.news__img {
+.news-page__img {
   float: left;
   margin-right: 12px; }
 
-.news__date {
+.news-page__date {
   font-size: 13px;
   color: #b1b1b1;
   line-height: 20px;
   margin-bottom: 10px; }
 
-.news__subtitle {
+.news-page__subtitle {
   font-size: 15px;
   line-height: 20px; }
-  .news__subtitle:hover {
+  .news-page__subtitle:hover {
     color: #ffa200;
     text-decoration: underline; }
 
-.news__text {
+.news-page__text {
   font-size: 13px;
   line-height: 20px;
   margin-bottom: 15px; }
 
-.news__bold {
+.news-page__bold {
   font-weight: 700; }

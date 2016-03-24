@@ -1,0 +1,26 @@
+block link
+  -var selected = 'Пресс-центр';﻿
+
+block rightMenu
+  -var selected = 'Новости';
+
+extends ../layouts/two-column.jade
+
+block title
+  title Новости
+
+block css
+  // build:css css/news-page.min.css
+  link(rel='stylesheet', href='css/news-page.css')
+  //endbuild
+
+block aside-nav
+  include ../common/press-nav.jade
+
+block subscribe
+  include ../common/subscribe.jade
+
+block right-content
+  .section--right
+    include ../common/news-page/news.jade
+    include ../common/pages-list.jade

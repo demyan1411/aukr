@@ -7,22 +7,12 @@
     <title>Новости</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <!-- build:css css/vendor.min.css-->
-    <!-- bower:css-->
-    <link rel="stylesheet" href="/bower/normalize-css/normalize.css">
-    <link rel="stylesheet" href="/bower/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/bower/slick-carousel/slick/slick-theme.css">
-    <!-- endbower-->
-    <!-- endbuild-->
-    <!-- build:css css/news.min.css-->
-    <link rel="stylesheet" href="css/search.css">
-    <!--endbuild-->
-    <!-- build:css css/oldIe.min.css--><!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/oldIe.css"><![endif]-->
-    <!-- endbuild-->
-    <!-- build:js js/modernizr.min.js-->
-    <script src="bower/modernizr/modernizr.js"></script>
-    <!-- endbuild-->
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/news-page.min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/oldIe.min.css">
+    <![endif]-->
+    <script src="js/modernizr.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   </head>
   <body>
@@ -50,7 +40,7 @@
               <li class="nav__item"><a href="mission.html" class="nav__link">Об ассоциации</a></li>
               <li class="nav__item"><a href="contacts.html" class="nav__link">Поддержка производителей овощей</a></li>
               <li class="nav__item"><a href="qwe.html" class="nav__link">Информация для участников</a></li>
-              <li class="nav__item"><a href="news-page.html" class="nav__link">Пресс-центр</a></li>
+              <li class="nav__item"><a href="news-page.html" class="nav__link active">Пресс-центр</a></li>
               <li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
             </ul>
           </div>
@@ -60,15 +50,12 @@
             <div class="wrapper__column">
               <aside class="aside">
                 <nav class="aside__nav">
+                  <ul class="aside-menu">
+                    <li class="aside-menu__item"><a href="news-page.html" class="aside-menu__link active">Новости</a></li>
+                    <li class="aside-menu__item"><a href="" class="aside-menu__link">Статьи</a></li>
+                    <li class="aside-menu__item"><a href="" class="aside-menu__link">Аналитические обзоры</a></li>
+                  </ul>
                 </nav>
-                <div class="aside-search">
-                  <div class="aside-search__title">Вы искали:</div>
-                  <form class="aside-search__form">
-                    <input type="search" placeholder="«Подзаголовок - взятый с потолка" class="aside-search__input">
-                    <button type="submit" class="aside-search__button"></button>
-                  </form>
-                  <div class="aside-search__subtitle">Вы можете изменить запрос поиска</div>
-                </div>
                 <div class="subscribe">
                   <div class="subscribe__title">Подписаться на публикации</div>
                   <form action="" class="js-subscribe-form">
@@ -80,31 +67,39 @@
             </div>
             <div class="wrapper__column--right">
               <div class="section--right">
-                <section class="right-search">
-                  <div class="right-search__title">Результат поиска</div>
-                  <div class="search-block">
-                    <div class="search-block__date">15 декабря 2015</div><a href="" class="search-block__title search-block__title--link">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. </a>
-                    <div class="search-block__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="search-block__bold">
-                         
-                        Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div><a href="" class="arrow-button">Подробнее</a>
+                <section class="news-page">
+                  <div class="news-page__title">Заголовок раздела</div>
+                  <div class="news-page__item">
+                    <div class="news-page__top"><img src="img/news3.jpg" alt="" class="news-page__img">
+                      <div class="news-page__info">
+                        <div class="news-page__date">15 декабря 2015</div><a href="" class="news-page__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент</a>
+                      </div>
+                    </div>
+                    <div class="news-page__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="news-page__bold">Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы </div><a href="" class="arrow-button">Подробнее</a>
                   </div>
-                  <div class="search-block">
-                    <div class="search-block__date">15 декабря 2015</div><a href="" class="search-block__title search-block__title--link">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. </a>
-                    <div class="search-block__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="search-block__bold">
-                         
-                        Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div><a href="" class="arrow-button">Подробнее</a>
+                  <div class="news-page__item">
+                    <div class="news-page__top"><img src="img/news4.jpg" alt="" class="news-page__img">
+                      <div class="news-page__info">
+                        <div class="news-page__date">15 декабря 2015</div><a href="" class="news-page__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент</a>
+                      </div>
+                    </div>
+                    <div class="news-page__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="news-page__bold">Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы </div><a href="" class="arrow-button">Подробнее</a>
                   </div>
-                  <div class="search-block">
-                    <div class="search-block__date">15 декабря 2015</div><a href="" class="search-block__title search-block__title--link">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. </a>
-                    <div class="search-block__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="search-block__bold">
-                         
-                        Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div><a href="" class="arrow-button">Подробнее</a>
+                  <div class="news-page__item">
+                    <div class="news-page__top">
+                      <div class="news-page__info">
+                        <div class="news-page__date">15 декабря 2015</div><a href="" class="news-page__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент</a>
+                      </div>
+                    </div>
+                    <div class="news-page__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="news-page__bold">Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы </div><a href="" class="arrow-button">Подробнее</a>
                   </div>
-                  <div class="search-block">
-                    <div class="search-block__date">15 декабря 2015</div><a href="" class="search-block__title search-block__title--link">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. </a>
-                    <div class="search-block__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="search-block__bold">
-                         
-                        Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.."</div><a href="" class="arrow-button">Подробнее</a>
+                  <div class="news-page__item">
+                    <div class="news-page__top"><img src="img/news5.jpg" alt="" class="news-page__img">
+                      <div class="news-page__info">
+                        <div class="news-page__date">15 декабря 2015</div><a href="" class="news-page__subtitle">Подзаголовок - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент</a>
+                      </div>
+                    </div>
+                    <div class="news-page__text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. <span class="news-page__bold">Lorem Ipsum используют потому, </span>что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы </div><a href="" class="arrow-button">Подробнее</a>
                   </div>
                 </section>
                 <section class="pages-list">
@@ -194,16 +189,7 @@
         </div>
       </footer>
     </div>
-    <!-- build:js js/vendor.min.js-->
-    <!-- bower:js-->
-    <script src="/bower/jquery/dist/jquery.js" defer></script>
-    <script src="/bower/slick-carousel/slick/slick.min.js" defer></script>
-    <!-- endbower-->
-    <!-- endbuild-->
-    <!-- build:js js/main.min.js-->
-    <script src="js/submit-form.js" defer></script>
-    <script src="js/map.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <!-- endbuild-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

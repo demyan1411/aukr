@@ -35,18 +35,20 @@ $(document).ready(function() {
 		autoplay: false,
 		dots: true,
 		slidesToShow: 6,
-  	slidesToScroll: 1,
+  	slidesToScroll: 6,
 		responsive: [
 			{
 				breakpoint: 1000,
 				settings: {
-					slidesToShow: 4
+					slidesToShow: 4,
+					slidesToScroll: 4,
 				}
 			},
 			{
 				breakpoint: 740,
 				settings: {
 					slidesToShow: 2,
+					slidesToScroll: 2,
 					dots: false
 				}
 			}
@@ -83,7 +85,15 @@ $(document).ready(function() {
 		slidesToShow: 1,
   	slidesToScroll: 1,
 		fade: true,
-		asNavFor: '.gallery-nav'
+		asNavFor: '.gallery-nav',
+		responsive: [
+			{
+				breakpoint: 1000,
+				settings: {
+					fade: false
+				}
+			}
+		]
 	});
 
 	$('.js-nav').on('click', function() {
@@ -91,6 +101,10 @@ $(document).ready(function() {
 			$(this).toggleClass('js-active');
 			$(this).siblings('.js-nav-list').slideToggle();
 		}
+	});
+
+	$('.js-up').on('click', function() {
+		$('html, body').animate({scrollTop: 0}, 1000);
 	})
 
 }); // end ready
