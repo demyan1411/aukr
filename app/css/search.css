@@ -928,8 +928,14 @@ form .js-error {
   color: #b1b1b1;
   font-style: italic; }
 
+@media screen and (max-width: 1000px) {
+  .aside-search {
+    padding-right: 60px; } }
+
 @media screen and (max-width: 740px) {
-  .aside-search__form {
-    width: 280px; }
-  .aside-search__subtitle {
-    margin-bottom: 24px; } }
+  .aside-search {
+    padding-right: 0; }
+    .aside-search__form {
+      width: 280px; }
+    .aside-search__subtitle {
+      margin-bottom: 24px; } }

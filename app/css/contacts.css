@@ -805,6 +805,10 @@ form .js-error {
       width: 11px;
       height: 15px;
       margin-left: 15px; }
+  .form__file-ok {
+    text-align: left;
+    color: #ffa201;
+    margin-top: 6px; }
   .form .button {
     margin-top: 30px; }
 
