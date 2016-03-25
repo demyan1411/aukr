@@ -8,6 +8,7 @@
 	&__left {
 		max-width: 180px;
 		float: left;
+		position: relative;
 	}
 	&__addres {
 		color: #acaeb2;
@@ -56,7 +57,7 @@
 		line-height: 19px;
 		color: #fee1bb;
 		margin-bottom: 18px;
-		@include placecolor(#fee1bb);
+		@include placecolor(#898078);
 	}
 	&__bottom {
 
@@ -94,6 +95,25 @@
 	&__feedback {
 		display: block;
 		@include text_dec_un;
+	}
+	&__up {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		font-size: 12px;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+		display: none;
+
+		&:before {
+			content: '';
+			width: 50px;
+			height: 50px;
+			background: url(../img/up.png) 0 0 no-repeat;
+			display: block;
+			margin-bottom: 2px;
+		}
 	}
 }
 .social {
@@ -143,6 +163,8 @@
 			float: none;
 			margin-left: 0;
 		}
-
+		&__up {
+			display: block;
+		}
 	}
 }
