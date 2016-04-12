@@ -13,6 +13,8 @@ $(document).ready(function() {
 		});
 	}
 
+	new MainMenuOpen();
+
 	$('.main-slider').slick({
 		autoplay: false,
 		dots: true,
@@ -94,13 +96,6 @@ $(document).ready(function() {
 				}
 			}
 		]
-	});
-
-	$('.js-nav').on('click', function() {
-		if($(window).width() < 740) {
-			$(this).toggleClass('js-active');
-			$(this).siblings('.js-nav-list').slideToggle();
-		}
 	});
 
 	$('.js-up').on('click', function() {

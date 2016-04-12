@@ -24,3 +24,9 @@ mixin partner(imgSrc, name, site, email)
     .partner__block
       .partner__left e-mail:
       .partner__right= email
+
+mixin submenu(object)
+  ul.submenu
+    each link, name in object
+      li.submenu__item
+        a.submenu__link(href=link)= name

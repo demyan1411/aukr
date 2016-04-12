@@ -5,7 +5,30 @@ block link
 nav.nav
   .wrapper
     .nav__title.js-nav Меню
-    ul.nav__list.js-nav-list
+    ul.nav__list.js-nav-list.js-main-menu
       each val, key in menu
         li.nav__item
           a.nav__link(href=val, class={active: selected === key})= key
+          case key
+            when 'Главная'
+              +submenu({
+                'Главная': 'qwe.html',
+                'Об ассоциации': 'asd.html'
+                })
+            when 'Об ассоциации'
+              +submenu({
+                'Главная': 'qwe.html',
+                'Об ассоциации': 'asd.html',
+                'Поддержка производителей овощей': 'zxc.html'
+                })
+            when 'Поддержка производителей овощей'
+              +submenu({
+                'Главная': 'qwe.html',
+                'Об ассоциации': 'asd.html',
+                'Поддержка производителей овощей': 'zxc.html'
+                })
+            when 'Пресс-центр'
+              +submenu({
+                'Главная': 'qwe.html',
+                'Об ассоциации': 'asd.html'
+                })
